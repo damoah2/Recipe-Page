@@ -1,0 +1,53 @@
+/*
+Dennis Amoah
+Recipe page Challenge
+*/
+
+/*Body*/
+.container {
+    max-width: 969px;
+    padding: 0;
+}
+
+/*header*/
+.dots {
+    rotate: 90deg;
+    fill: #e0e0e0;
+}
+
+header img{
+    max-width: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+.fork-icon {
+    fill: #F2994A;
+}
+
+.clock-icon {
+    background-color: white;
+}
+
+.recipe-tracker {
+    align-self: right;
+}
+
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .recipe-tracker {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sub-tracker {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

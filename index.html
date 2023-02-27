@@ -19,7 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
     <!--Google Fonts-->
 
     <!--Bootstrap-->
@@ -29,108 +28,172 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!--Local CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <title>Recipe page</title>
   </head>
   <body>
-    <div class="contrainer">
-      <header>
+    <div class="container">
+      <header class="">
         <h1>Classic Cheesecake Recipe</h1>
         <p>
+          <i>
+            <svg class="dots" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
+              <path
+                d="M353.274 896Q323 896 301.5 874.441T280 822.608q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774T353.274 896Zm253.334 0q-30.274 0-51.774-21.559t-21.5-51.833q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833Q680 853 658.441 874.5T606.608 896ZM353.274 649.333q-30.274 0-51.774-21.559T280 575.941q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5Zm253.334 0q-30.274 0-51.774-21.559t-21.5-51.833q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5ZM353.274 402.666q-30.274 0-51.774-21.559T280 329.274Q280 299 301.559 277.5t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5Zm253.334 0q-30.274 0-51.774-21.559t-21.5-51.833q0-30.274 21.559-51.774t51.833-21.5Q637 256 658.5 277.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5Z" />
+            </svg>
+          </i>
           Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no
           one can deny its simple decadence. For the best results, bake in a water bath.
         </p>
         <img src="photo1.png" alt="A picture of a cheese Cake with a raspberry and a blueberry on top of it.">
       </header>
       <main>
-        <section class="recipe-tracker">
-          <div></div>
-          <div></div>
-        </section>
-
         <!-- Ingredients -->
-        <section>
-          <h2>Ingredients</h2>
-          <div>
-            <h3>Graham Cracker Crust</h3>
-            <label class="item-container"> 
-              <input type="checkbox">
-              <span class="checkmark">
-                1 and 1/2 cups (150g) <b>graham cracker crumbs</b> (about 10 full sheet graham crackers)
+        <div class="row">
+          <section class="col-lg-6 col-md-12 col-sm-12">
+            <h2>Ingredients</h2>
+            <div>
+              <h3>Graham Cracker Crust</h3>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  1 and 1/2 cups (150g) <b>graham cracker crumbs</b> (about 10 full sheet graham crackers)
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  5 Tablespoons (70g) <b>unsalted butter</b>, melted
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  1/4 cup (50g) <b>granulated sugar</b>
+                </span>
+              </label>
+            </div>
+          
+            <div>
+              <h3>Cheesecake</h3>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  four 8-ounce blocks (904g) full-fat <b>cream cheese</b>, softened to room temperature
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  1 cup (200g) <b>granulated sugar</b>
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  1 cup (240g) full-fat <b>sour cream</b>, at room temperature
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  1 teaspoon <b>pure vanilla extract</b>
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  2 teaspoons <b>fresh lemon juice</b> (optional, but recommended)
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  3 large eggs, at room temperature
+                </span>
+              </label>
+              <br>
+              <label class="item-container">
+                <input type="checkbox">
+                <span class="checkmark">
+                  topping suggestions: <i>salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate
+                    ganache,
+                    fresh fruit, whipped cream, or raspberry sauce</i> (recipe in notes)
+                </span>
+              </label>
+            </div>
+          </section>
+          
+          <!--Recipe Serving-->
+          <section class="recipe-tracker col-lg-2 col-md-12 col-sm-12">
+            <div class="top-tracker">
+              <i class="fork-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
+                  <path
+                    d="m168.333 936-46.666-46.666 416.667-416.667q-20.667-46-8.334-98 12.333-52 57-96 47.667-47 112-58.334Q763.333 209 804.333 250 846 291.667 834 355.333 822 419 773 468.667q-41.333 42.666-92.667 55.666-51.333 13-94.666-5.667L524.333 580l309.334 309.334L787 936 477.667 627.333 168.333 936ZM291 588 171.667 468.667q-52-52-53.334-123.667Q117 273.333 167 219.333L413 466 291 588Z" />
+                </svg>
+              </i>
+              <span>
+                <span>YIELDS</span><br>
+                <span>12 servings</span>
               </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                5 Tablespoons (70g) <b>unsalted butter</b>, melted
-              </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                1/4 cup (50g) <b>granulated sugar</b>
-              </span>
-            </label>
-          </div>
-
-          <div>
-            <h3>Cheesecake</h3>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark"> 
-                four 8-ounce blocks (904g) full-fat <b>cream cheese</b>, softened to room temperature
-              </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                1 cup (200g) <b>granulated sugar</b>
-              </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                1 cup (240g) full-fat <b>sour cream</b>, at room temperature
-              </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                1 teaspoon <b>pure vanilla extract</b>
-              </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                2 teaspoons <b>fresh lemon juice</b> (optional, but recommended)
-              </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                3 large eggs, at room temperature
-              </span>
-            </label>
-            <br>
-            <label class="item-container">
-              <input type="checkbox">
-              <span class="checkmark">
-                topping suggestions: <i>salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache,
-                fresh fruit, whipped cream, or raspberry sauce</i> (recipe in notes)
-              </span>
-            </label>
-          </div>
-        </section>
-
+            </div>
+            <div class="sub-tracker">
+              <!--Prep Time-->
+              <div>
+                <i class="clock-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
+                    <path
+                      d="m622 767.333 48.667-48.666-155.334-156V367.333h-66.666v222l173.333 178ZM480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-82.333 31.5-155.333t85.833-127.334Q251.667 239 324.667 207.5T480 176q82.333 0 155.333 31.5t127.334 85.833Q817 347.667 848.5 420.667T880 576q0 82.333-31.5 155.333t-85.833 127.334Q708.333 913 635.333 944.5T480 976Zm0-400Zm0 333.334q137.667 0 235.5-97.834 97.834-97.833 97.834-235.5T715.5 340.5q-97.833-97.834-235.5-97.834T244.5 340.5q-97.834 97.833-97.834 235.5T244.5 811.5q97.833 97.834 235.5 97.834Z" />
+                  </svg>
+                </i>
+                <span>
+                  <span>Prep Time</span><br>
+                  <span>45 minutes</span>
+                </span>
+              </div>
+          
+              <!--Cook Time -->
+              <div>
+                <i class="clock-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
+                    <path
+                      d="m622 767.333 48.667-48.666-155.334-156V367.333h-66.666v222l173.333 178ZM480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-82.333 31.5-155.333t85.833-127.334Q251.667 239 324.667 207.5T480 176q82.333 0 155.333 31.5t127.334 85.833Q817 347.667 848.5 420.667T880 576q0 82.333-31.5 155.333t-85.833 127.334Q708.333 913 635.333 944.5T480 976Zm0-400Zm0 333.334q137.667 0 235.5-97.834 97.834-97.833 97.834-235.5T715.5 340.5q-97.833-97.834-235.5-97.834T244.5 340.5q-97.834 97.833-97.834 235.5T244.5 811.5q97.833 97.834 235.5 97.834Z" />
+                  </svg>
+                </i>
+                <span>
+                  <span>Cook Time</span><br>
+                  <span>1 hour</span>
+                </span>
+              </div>
+          
+              <!--Total Time-->
+              <div>
+                <i class="clock-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
+                    <path
+                      d="m622 767.333 48.667-48.666-155.334-156V367.333h-66.666v222l173.333 178ZM480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-82.333 31.5-155.333t85.833-127.334Q251.667 239 324.667 207.5T480 176q82.333 0 155.333 31.5t127.334 85.833Q817 347.667 848.5 420.667T880 576q0 82.333-31.5 155.333t-85.833 127.334Q708.333 913 635.333 944.5T480 976Zm0-400Zm0 333.334q137.667 0 235.5-97.834 97.834-97.833 97.834-235.5T715.5 340.5q-97.833-97.834-235.5-97.834T244.5 340.5q-97.834 97.833-97.834 235.5T244.5 811.5q97.833 97.834 235.5 97.834Z" />
+                  </svg>
+                </i>
+                <span>
+                  <span>Total Time</span><br>
+                  <span>7.75 hours</span>
+                </span>
+              </div>
+          
+            </div>
+          </section>
+        </div>
         <!-- Instructions -->
-        <section class="instructions">
+        <section class="instructions col-lg-6 col-md-12 col-sm-12">
           <h2>Instructions</h2>
           <!-- Step 1 -->
           <div class="instruction-step">
