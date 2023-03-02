@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://damoah2.github.io/Interior-Consultant/">
+    <a href="https://damoah2.github.io/Recipe-Page/">
       Demo
     </a>
     <span> | </span>
