@@ -20,6 +20,11 @@
       rel="stylesheet"
     />
     <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet">
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,16 +41,20 @@
     <div class="container">
       <header class="">
         <h1>Classic Cheesecake Recipe</h1>
-        <p>
+        <div class="intro">
           <i>
-            <svg class="dots" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
+            <svg class="dots" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30">
               <path
                 d="M353.274 896Q323 896 301.5 874.441T280 822.608q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774T353.274 896Zm253.334 0q-30.274 0-51.774-21.559t-21.5-51.833q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833Q680 853 658.441 874.5T606.608 896ZM353.274 649.333q-30.274 0-51.774-21.559T280 575.941q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5Zm253.334 0q-30.274 0-51.774-21.559t-21.5-51.833q0-30.274 21.559-51.774t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5ZM353.274 402.666q-30.274 0-51.774-21.559T280 329.274Q280 299 301.559 277.5t51.833-21.5q30.274 0 51.774 21.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5Zm253.334 0q-30.274 0-51.774-21.559t-21.5-51.833q0-30.274 21.559-51.774t51.833-21.5Q637 256 658.5 277.559t21.5 51.833q0 30.274-21.559 51.774t-51.833 21.5Z" />
             </svg>
           </i>
-          Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no
-          one can deny its simple decadence. For the best results, bake in a water bath.
-        </p>
+          <p>
+            Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust,
+            no
+            one can deny its simple decadence. For the best results, bake in a water bath.
+          </p>
+        </div>
+        
         <img src="photo1.png" alt="A picture of a cheese Cake with a raspberry and a blueberry on top of it.">
       </header>
       <main>
@@ -141,51 +150,51 @@
                     d="m168.333 936-46.666-46.666 416.667-416.667q-20.667-46-8.334-98 12.333-52 57-96 47.667-47 112-58.334Q763.333 209 804.333 250 846 291.667 834 355.333 822 419 773 468.667q-41.333 42.666-92.667 55.666-51.333 13-94.666-5.667L524.333 580l309.334 309.334L787 936 477.667 627.333 168.333 936ZM291 588 171.667 468.667q-52-52-53.334-123.667Q117 273.333 167 219.333L413 466 291 588Z" />
                 </svg>
               </i>
-              <span>
-                <span>YIELDS</span><br>
-                <span>12 servings</span>
+              <span class="time-detail">
+                <span class="detail-1">YIELDS</span><br>
+                <span class="detail-2">12 servings</span>
               </span>
             </div>
             <div class="sub-tracker">
               <!--Prep Time-->
-              <div>
+              <div class="clock">
                 <i class="clock-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
                     <path
                       d="m622 767.333 48.667-48.666-155.334-156V367.333h-66.666v222l173.333 178ZM480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-82.333 31.5-155.333t85.833-127.334Q251.667 239 324.667 207.5T480 176q82.333 0 155.333 31.5t127.334 85.833Q817 347.667 848.5 420.667T880 576q0 82.333-31.5 155.333t-85.833 127.334Q708.333 913 635.333 944.5T480 976Zm0-400Zm0 333.334q137.667 0 235.5-97.834 97.834-97.833 97.834-235.5T715.5 340.5q-97.833-97.834-235.5-97.834T244.5 340.5q-97.834 97.833-97.834 235.5T244.5 811.5q97.833 97.834 235.5 97.834Z" />
                   </svg>
                 </i>
-                <span>
-                  <span>Prep Time</span><br>
-                  <span>45 minutes</span>
+                <span class="time-detail">
+                  <span class="detail-1">Prep Time</span><br>
+                  <span class="detail-2">45 minutes</span>
                 </span>
               </div>
           
               <!--Cook Time -->
-              <div>
+              <div class="clock">
                 <i class="clock-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
                     <path
                       d="m622 767.333 48.667-48.666-155.334-156V367.333h-66.666v222l173.333 178ZM480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-82.333 31.5-155.333t85.833-127.334Q251.667 239 324.667 207.5T480 176q82.333 0 155.333 31.5t127.334 85.833Q817 347.667 848.5 420.667T880 576q0 82.333-31.5 155.333t-85.833 127.334Q708.333 913 635.333 944.5T480 976Zm0-400Zm0 333.334q137.667 0 235.5-97.834 97.834-97.833 97.834-235.5T715.5 340.5q-97.833-97.834-235.5-97.834T244.5 340.5q-97.834 97.833-97.834 235.5T244.5 811.5q97.833 97.834 235.5 97.834Z" />
                   </svg>
                 </i>
-                <span>
-                  <span>Cook Time</span><br>
-                  <span>1 hour</span>
+                <span class="time-detail">
+                  <span class="detail-1">Cook Time</span><br>
+                  <span class="detail-2">1 hour</span>
                 </span>
               </div>
           
               <!--Total Time-->
-              <div>
+              <div class="clock">
                 <i class="clock-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40">
                     <path
                       d="m622 767.333 48.667-48.666-155.334-156V367.333h-66.666v222l173.333 178ZM480 976q-82.333 0-155.333-31.5t-127.334-85.833Q143 804.333 111.5 731.333T80 576q0-82.333 31.5-155.333t85.833-127.334Q251.667 239 324.667 207.5T480 176q82.333 0 155.333 31.5t127.334 85.833Q817 347.667 848.5 420.667T880 576q0 82.333-31.5 155.333t-85.833 127.334Q708.333 913 635.333 944.5T480 976Zm0-400Zm0 333.334q137.667 0 235.5-97.834 97.834-97.833 97.834-235.5T715.5 340.5q-97.833-97.834-235.5-97.834T244.5 340.5q-97.834 97.833-97.834 235.5T244.5 811.5q97.833 97.834 235.5 97.834Z" />
                   </svg>
                 </i>
-                <span>
-                  <span>Total Time</span><br>
-                  <span>7.75 hours</span>
+                <span class="time-detail">
+                  <span class="detail-1">Total Time</span><br>
+                  <span class="detail-2">7.75 hours</span>
                 </span>
               </div>
           

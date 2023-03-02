@@ -10,17 +10,48 @@ Recipe page Challenge
 }
 
 /*header*/
+header h1 {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #000;
+}
+
 .dots {
     rotate: 90deg;
-    fill: #e0e0e0;
+    fill: #C4C4C4;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.intro p {
+    font-family: 'Montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: italic;
+    max-width: 592px;
+    padding-left: 1%;
 }
 
 header img{
     max-width: 100%;
 }
 
+
+/*Body*/
 .row {
     margin: 0;
+    padding-top: 5%;
+}
+
+.recipe-tracker {
+    margin-left: 10%;
 }
 
 .fork-icon {
@@ -35,15 +66,64 @@ header img{
     align-self: right;
 }
 
-@media screen and (max-width: 1000px) {
+.top-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.clock {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.time-detail {
+    margin: 0;
+    
+}
+
+.detail-1 {
+    color: #bdbdbd;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-size: 10px;
+    margin: 0;
+}
+
+.detail-2 {
+    color: #333;
+    line-height: 17px;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1050px) {
     .row {
+        display: flex;
         flex-wrap: wrap-reverse;
     }
 
     .recipe-tracker {
         display: flex;
         flex-wrap: wrap;
+        margin: 0;
     }
+
+    .sub-tracker {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    
 
     .sub-tracker {
         display: flex;
